@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moveCharacter : MonoBehaviour {
-
+    /* Just a basic script for movement
+     * it's not very good
+     * W/S and up/down
+     * A/D is left/right
+     */
     private float turnSpeed = 10f;
     private float moveSpeed = 10f;
     private float mouseTurnMultiplier = 1;

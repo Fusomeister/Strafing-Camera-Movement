@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour {
 
+    /* Nest camera inside your character
+     * target is your playable character you want to follow
+     * Select your character inside Unity
+     */
     public GameObject target;
-    //Vector3 offset;
 
     private float leftCamera = -2f;
     private float rightCamera = 2f;
@@ -32,14 +35,5 @@ public class FollowCamera : MonoBehaviour {
         }
 
         transform.localPosition = new Vector3(currentLocation, transform.localPosition.y, transform.localPosition.z);
-    }
-
-    void LateUpdate()
-    {
-        //float desiredAngle = target.transform.eulerAngles.y;
-        //Quaternion rotation = Quaternion.Euler(0, desiredAngle, 0);
-
-        //transform.position = target.transform.position - (rotation * offset);
-        //transform.LookAt(target.transform);
     }
 }
